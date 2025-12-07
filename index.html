@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FanPage</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            width: 350px;
+            padding: 40px 30px;
+            border: 1px solid #dbdbdb;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 40px;
+            font-family: 'Segoe Script', cursive;
+            margin-bottom: 30px;
+            color: #262626;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            background: #fafafa;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background: #3897f0;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2f82d6;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #00376b;
+        }
+    </style>
+
+    <script>
+        function login() {
+            // No valida nada real porque es una tarea, solo simula ingreso
+            window.location.href = "panel.html";  
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">FanGram</div>
+
+        <input type="text" placeholder="Teléfono, usuario o correo">
+        <input type="password" placeholder="Contraseña">
+
+        <button onclick="login()">Iniciar sesión</button>
+
+        <div class="footer">
+            ¿No tienes cuenta? <a href="#">Regístrate</a>
+        </div>
+    </div>
+
+</body>
+</html>
